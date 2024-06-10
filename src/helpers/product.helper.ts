@@ -8,6 +8,9 @@ export async function getProductsDB() {
     const res = await fetch(`${apiUrl}/products`, {
       method: "GET",
       // cache: "no-cache"
+      headers: {
+        "ngrok-skip-browser-warning": "true",
+      },
       next: { revalidate: 15 },
     });
     const products: IProduct[] = await res.json();

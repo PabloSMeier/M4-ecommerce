@@ -6,6 +6,7 @@ export async function createOrder(products: number[], token: string) {
       method: "POST",
       headers: {
         "Content-type": "application/json",
+        "ngrok-skip-browser-warning": "true",
         Authorization: token,
       },
       body: JSON.stringify({
@@ -26,6 +27,7 @@ export async function getOrders(token: string) {
       cache: "no-cache",
       headers: {
         Authorization: token,
+        "ngrok-skip-browser-warning": "true",
       },
     });
     const orders = await res.json();

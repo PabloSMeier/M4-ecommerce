@@ -9,6 +9,7 @@ export async function register(user: IRegisterProps) {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
+        "ngrok-skip-browser-warning": "true",
       },
       body: JSON.stringify(user),
     });
@@ -28,6 +29,7 @@ export async function login(user: ILoginProps) {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
+        "ngrok-skip-browser-warning": "true",
       },
       body: JSON.stringify(user),
     });
