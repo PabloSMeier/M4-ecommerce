@@ -1,0 +1,151 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.btn-primary {
+  @apply rounded bg-transparent p-2 hover:bg-secondary hover:text-tertiary border-semidark hover:border-secondary border-2  ease-in-out duration-300 text-secondary font-black;
+}
+.btn-secondary {
+  @apply rounded text-xs bg-transparent lg:text-lg p-2 hover:bg-secondary hover:text-tertiary border-semidark hover:border-secondary border-2  ease-in-out duration-300 text-secondary font-black;
+}
+.default-input {
+  @apply rounded my-4 bg-primary h-7 w-full text-light p-2 focus:outline-secondary outline-none focus:shadow-lg focus:shadow-secondary hover:shadow-md hover:shadow-light;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+html {
+  background-color: #222831;
+}
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+/* Reset CSS */
+
+/* Remove all the margins, paddings, and borders from all elements */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Set base line-height and font family */
+html {
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+  font-family: sans-serif;
+}
+
+/* Remove the border on images inside links in IE 10 */
+img {
+  border-style: none;
+}
+
+/* Correct the text overflow in Edge and IE */
+button,
+input,
+optgroup,
+select,
+textarea {
+  margin: 0; /* 1 */
+  font-family: inherit; /* 2 */
+  font-size: inherit; /* 3 */
+  line-height: inherit; /* 4 */
+}
+
+/* Show the overflow in IE */
+input {
+  overflow: visible;
+}
+
+/* Remove the inheritance of text transform in Firefox */
+button,
+select {
+  text-transform: none;
+}
+
+/* Correct the inability to style clickable types in iOS and Safari */
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+/* Remove the inner border and padding in Firefox */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/* Restore the focus styles unset by the previous rule */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/* Remove the additional :invalid styles in Firefox */
+:-moz-ui-invalid {
+  box-shadow: none;
+}
+
+/* Correct the odd appearance in Chrome and Safari */
+progress {
+  vertical-align: baseline;
+}
+
+/* Reset the default appearance in IE 10+ */
+[type="search"] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+/* Remove the inner padding in Chrome and Safari on macOS */
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/* Correct the inability to style clickable types in iOS and Safari */
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/* Make replaced elements display: block by default */
+img,
+svg {
+  display: block;
+}
+
+/* Remove the margin in Safari */
+svg {
+  overflow: hidden;
+}
