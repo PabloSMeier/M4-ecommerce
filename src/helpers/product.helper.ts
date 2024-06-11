@@ -11,7 +11,7 @@ export async function getProductsDB() {
       headers: {
         "ngrok-skip-browser-warning": "true",
       },
-      next: { revalidate: 15 },
+      next: { revalidate: 3600 },
     });
     const products: IProduct[] = await res.json();
     return products;
