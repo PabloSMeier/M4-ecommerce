@@ -8,7 +8,7 @@ const Footer: React.FC = () => {
       <Link href="/">
         <Image src="/HS.png" alt="logo" width={100} height={100} />
       </Link>
-      <p>Henry´s Store &copy; 2024</p>
+      <p>Henry´s Store &copy; 2024 </p>
       <p></p>
     </footer>
   );
