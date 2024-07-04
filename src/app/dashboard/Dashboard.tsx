@@ -29,7 +29,7 @@ export const Dashboard = () => {
   };
 
   return (
-    <div className="w-screen min-h-[75vh] text-light flex justify-center items-start bg-primary py-8 px-12 mt-[10vh] md:mt-[17vh] ">
+    <div className="w-screen min-h-[70vh] text-light flex justify-center items-start bg-primary py-8 px-12 mt-[10vh] md:mt-[17vh] ">
       {!user ? (
         <p>You are not logged.</p>
       ) : (

@@ -65,7 +65,7 @@ export const Cart: React.FC = () => {
   };
 
   return (
-    <div className="w-screen bg-primary min-h-[75vh] rounded-xl text-light py-8 px-3 flex items-start justify-center mt-[10vh] md:mt-[17vh]">
+    <div className="w-screen bg-primary min-h-[70vh] rounded-xl text-light py-8 px-3 flex items-start justify-center mt-[10vh] md:mt-[17vh]">
       <div className="min-w-[70vw] lg:min-w-[50vw] lg:max-w-[60vw] shadow-md shadow-light hover:shadow-secondary rounded-xl flex flex-col p-8 gap-y-4 bg-tertiary">
         <h1 className="font-black text-xl">MY CART</h1>
         {cart?.length > 0 ? (

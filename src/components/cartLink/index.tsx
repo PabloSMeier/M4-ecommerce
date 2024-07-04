@@ -18,7 +18,7 @@ export const CartLink: React.FC = () => {
       router.push("/cart");
       closeMenu();
     } else {
-      showErrorAlert("Not logged", "You must be logged to see your cart.");
+      showErrorAlert("No está logeado", "Debe logearse para ver su carrito.");
       router.push("/login");
       closeMenu();
     }
